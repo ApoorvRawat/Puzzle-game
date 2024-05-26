@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewInstructions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Welcome to the Sliding Puzzle Game!\n\nHow to Play:\n1. The game starts with a grid of tiles that form a scrambled image of a smiling emoji. The grid includes one empty space that allows adjacent tiles to be moved.\n2. Your goal is to rearrange the tiles to recreate the original image of the smiling emoji by sliding tiles into the empty space.\n3. Tap on a tile adjacent to the empty space to move it into that space.\n4. Keep moving the tiles until the original image is correctly formed, with the smiling emoji fully visible and correctly aligned.\n\nTips:\n- Plan your moves ahead to minimize the number of moves.\n- Use the empty space strategically to maneuver tiles around the grid.\n- There is no time limit, so take your time to think about each move.\n\nPress 'Exit Game' to return to the main menu or restart the game at any time. Enjoy the challenge and have fun piecing together the smiling emoji!"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Main Menu"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInstructions"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
